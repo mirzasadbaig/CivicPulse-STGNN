@@ -1,4 +1,4 @@
-# CivicPulse-STGNN — revised research discussion draft (v8)
+# CivicPulse-STGNN — revised research discussion draft (v9)
 
 The PDF is a new IEEEtran conference-format manuscript, not a submission or accepted publication. The previous report is superseded; original evidence is retained unchanged. Full real-data training was performed by the author on a Mac, not independently rerun in preparing this manuscript. Saved-output metric checks were performed; see `evidence/verification.json`.
 
@@ -22,6 +22,8 @@ python analyze_saved_predictions.py evidence/original_archives/CivicPulse_Permut
 - Removes reviewer-oriented labels, moves community details to a supplement, fixes architecture diagram and includes seed SD in the main results table.
 - Retains an explicit AI-assistance disclosure and no claim of independent training replication or publication.
 
-Remaining: author/mentor review, public repo release and rights/license check, future untouched evaluation, more constrained nulls and persistence-aware/calibrated models. See the manuscript limitations and `REFERENCE_CHECK.md`.
+Remaining: author/mentor review and rights/license check for the public repository, future untouched evaluation, more constrained nulls and persistence-aware/calibrated models. See the manuscript limitations and `REFERENCE_CHECK.md`.
 
 Version 8 retains the supervisor and internship credit introduced in version 7, archives the original five category-threshold runs, and verifies all 15 metric rows and 25 cutoffs. Table IV now reports sample SD. Category-preserving graph permutations remain unrun. From repository root, run `python scripts/verify_category_thresholds.py` to check the evidence.
+
+Version 9 clarifies the AI-assistance disclosure, adds the probability and category-threshold diagnostics to the contribution list, and includes the verified repository URL. Experimental results are unchanged.

@@ -91,8 +91,8 @@ docs/                  Methods, caveats, release and demonstration instructions
 
 Source: [NYC Open Data — 311 Service Requests from 2020 to Present](https://data.cityofnewyork.us/d/erm2-nwe9). Code licensing and mentor/institutional release approval remain subject to author confirmation. See [release checklist](docs/RELEASE_CHECKLIST.md).
 
-### Manuscript revision 8
-The [updated manuscript](paper/CivicPulse_STGNN.pdf) includes naive validation scores, Brier scores, and an explicit reproducibility appendix. See [final review and optional extensions](docs/FINAL_REVIEW.md) and [diagnostic CSVs](paper/evidence/final_review/). The spatial-only category-threshold extension is verified from archived per-seed predictions and validation labels. Category-preserving graph permutations remain unrun. This is a local release candidate; author/host approval is separate from software verification.
+### Manuscript revision 9
+The [updated manuscript](paper/CivicPulse_STGNN.pdf) includes naive validation scores, Brier scores, and an explicit reproducibility appendix. See [final review and optional extensions](docs/FINAL_REVIEW.md) and [diagnostic CSVs](paper/evidence/final_review/). The spatial-only category-threshold extension is verified from archived per-seed predictions and validation labels. Category-preserving graph permutations remain unrun. The repository is public; author/host approval is separate from software verification. Revision 9 clarifies the acknowledgment and contribution list without changing results.
 
 ## Category-specific decision thresholds
 
