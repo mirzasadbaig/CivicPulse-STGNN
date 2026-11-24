@@ -2,7 +2,7 @@
 
 ## Levels of verification
 
-1. **Packaging verification (completed for the uploaded copy)**: source files inspected; input SHA-256 matched the recorded manifest; the original 3 synthetic integration tests passed in the packaging environment (Python 3.13.5, installed CPU PyTorch 2.10.0).
+1. **Packaging verification (completed for the uploaded copy)**: source files inspected; input SHA-256 matched the recorded manifest; four tests (three synthetic integration tests and one feature-layout regression) passed in the packaging environment (Python 3.13.5, installed CPU PyTorch 2.10.0).
 2. **Recorded result verification (completed)**: the supplied evidence CSVs/manifest reproduce the numbers in the README, and can generate the graph. This does not re-train or validate the scientific results.
 3. **Real-data model rerun (NOT completed in the packaging environment)**: user must run the training/evaluation commands below on an appropriately provisioned machine; compare full output tables and environment information, then preserve logs.
 4. **Independent replication (NOT completed)**: a separate operator/environment should execute data extraction and training and document any discrepancies.
@@ -88,6 +88,7 @@ The permutation extension has 105 model fits, resumes completed runs, and is exp
 
 ```bash
 python scripts/verify_latest_evidence.py
+python scripts/verify_category_thresholds.py
 python scripts/plot_reported_results.py
 cd paper
 python make_figures.py
@@ -96,7 +97,7 @@ pdflatex CivicPulse_STGNN.tex
 cd ..
 ```
 
-The PDF build needs TeX Live with IEEEtran. `verify_latest_evidence.py` recomputes metrics from archived predictions and checks topology results and corrected GBM; it does not fit models. `paper/analyze_saved_predictions.py` regenerates diagnostics. The archived ZIPs are deliberately tracked as evidence and retained verbatim.
+The PDF build needs TeX Live with IEEEtran. `verify_latest_evidence.py` recomputes metrics from archived predictions and checks topology results and corrected GBM; it does not fit models. `paper/analyze_saved_predictions.py` regenerates diagnostics. The archived ZIPs are deliberately tracked as evidence and retained verbatim. The category-threshold verifier reselects validation cutoffs and recomputes all 15 spatial-refit metric rows.
 
 ## Dashboard rebuild
 
