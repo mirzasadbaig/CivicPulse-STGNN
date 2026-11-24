@@ -7,9 +7,9 @@
 - [ ] Author checks contribution/affiliation, institutional and mentor approval, NYC data terms, and code license before public release.
 - [ ] Exact aggregate inputs kept privately or shared through an approved snapshot archive; live API may return revised bytes.
 - [ ] Independent real-data retraining and future confirmation (not needed for professor discussion).
-- [ ] Create private GitHub repository, push and confirm access before sending professor link.
+- [x] Repository created and files pushed; manuscript, code and evidence accessible on GitHub.
+- [ ] Confirm authorization for its current public visibility and any external distribution; restrict access if clearance is pending.
 
-- [x] Spatial category-threshold console means transcribed and documented.
 - [x] Archive original `results/category_thresholds/` files and independently verify the new per-seed metrics and cutoffs.
 - [ ] Category-preserving graph permutations (optional future work).
 
