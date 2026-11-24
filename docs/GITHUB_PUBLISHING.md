@@ -1,17 +1,7 @@
-# Publishing checklist
+# Repository access and release maintenance
 
-The target is `mirzasadbaig/CivicPulse-STGNN`. Start private while checking ownership, internship/mentor approval, data rights and AI-disclosure requirements. The code license is deliberately not assigned. No repository creation or push is performed by this local package.
+The research repository is at https://github.com/mirzasadbaig/CivicPulse-STGNN. The manuscript is in `paper/CivicPulse_STGNN.pdf`. The dashboard can be opened locally from `dashboard/index.html` after cloning or downloading; GitHub's HTML file viewer is not a hosted interactive dashboard.
 
-Create an empty private repository at https://github.com/new (do not initialize a README, license or gitignore). In the extracted project root:
+Before external release, confirm ownership, internship/mentor approval, data rights, authorship and AI-use requirements. The code license is not assigned. The repository is currently public; if approval is pending, restrict access and share the approved report with the intended reviewers only. Public availability does not imply peer review or institutional endorsement.
 
-```bash
-git init -b main
-git add .
-git status --short
-git diff --cached --stat
-git commit -m "Initial CivicPulse-STGNN research release"
-git remote add origin https://github.com/mirzasadbaig/CivicPulse-STGNN.git
-git push -u origin main
-```
-
-Authenticate through GitHub's supported credential flow; never paste tokens in chat or commit them. Review the staged files before committing. Verify README, paper and evidence on GitHub. The HTML dashboard is runnable after cloning/downloading; it is not a hosted live dashboard. Keep private until approval, then change visibility if desired. A public URL is not evidence of peer review. For a private professor review, invite the professor as a collaborator or share the approved PDF separately.
+For updates, synchronize the existing local repository with `git pull origin main` before editing. Review staged changes and use GitHub's supported authentication flow; never commit tokens, raw input snapshots, caches or private files. See the [release checklist](RELEASE_CHECKLIST.md) and [reproduction guide](REPRODUCIBILITY.md).
