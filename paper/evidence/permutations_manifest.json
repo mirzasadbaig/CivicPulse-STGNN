@@ -1,0 +1,26 @@
+{
+  "status": "EXPLORATORY_POST_HOC_2026",
+  "past_sha256": "5f98e176da8168a4b5dbc409c958b5c58322d835d43ad8f96cd289110d012fec",
+  "future_sha256": "e442a3de8c0dd7652418816a28b0c118220b8921be910521cba163e8c25f8afe",
+  "args": {
+    "past": "data/nyc_daily_2024_2025.csv",
+    "future": "data/nyc_daily_2026_jan_sep.csv",
+    "output": "results/benchmark_extension",
+    "mode": "permutations",
+    "cpu": false,
+    "threads": 4,
+    "permutations": 20,
+    "seeds": [
+      7,
+      17,
+      27,
+      37,
+      42
+    ],
+    "epochs": 35
+  },
+  "selection": "2025 validation only",
+  "torch": "2.15.0",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+  "scaler_error": 0.0
+}

@@ -1,0 +1,22 @@
+# Raw/source-derived data are intentionally local: provide source and hashes instead.
+/data/*.csv
+/data/*_monthly_*/
+/results/
+/outputs/
+/figures/generated/
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+!.env.example
+*.log
+*.pt
+*.pth
+*.ckpt
+*.zip
+
+# Exact archived experiment evidence is intentionally tracked.
+!/paper/evidence/original_archives/*.zip

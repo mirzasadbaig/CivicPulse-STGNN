@@ -1,0 +1,525 @@
+month,complaint_type,count
+2026-07,Illegal Parking,49082
+2026-07,Noise - Residential,29971
+2026-07,Noise - Street/Sidewalk,25405
+2026-07,Water System,15934
+2026-07,Blocked Driveway,14686
+2026-07,UNSANITARY CONDITION,13225
+2026-07,Street Condition,10145
+2026-07,PLUMBING,7996
+2026-07,Damaged Tree,7991
+2026-07,Abandoned Vehicle,6962
+2026-07,Illegal Fireworks,6923
+2026-07,Dirty Condition,6810
+2026-07,PAINT/PLASTER,5634
+2026-07,Traffic Signal Condition,5468
+2026-07,Encampment,5246
+2026-07,Noise - Vehicle,5088
+2026-07,GENERAL,4502
+2026-07,DOOR/WINDOW,4393
+2026-07,WATER LEAK,4383
+2026-07,Noise - Commercial,4363
+2026-07,HEAT/HOT WATER,4331
+2026-07,Noise,4203
+2026-07,Illegal Dumping,4048
+2026-07,Missed Collection,3837
+2026-07,General Construction/Plumbing,3719
+2026-07,Overgrown Tree/Branches,3572
+2026-07,Maintenance or Facility,3483
+2026-07,ELECTRIC,3433
+2026-07,Derelict Vehicles,3266
+2026-07,Street Light Condition,3212
+2026-07,Building/Use,3105
+2026-07,Elevator,3029
+2026-07,Sewer,2921
+2026-07,Rodent,2761
+2026-07,FLOORING/STAIRS,2653
+2026-07,APPLIANCE,2528
+2026-07,Sidewalk Condition,2485
+2026-07,Obstruction,2328
+2026-07,Water Maintenance,2238
+2026-07,Homeless Person Assistance,2226
+2026-07,Vendor Enforcement,2225
+2026-07,Non-Emergency Police Matter,2069
+2026-07,Graffiti,2043
+2026-07,Consumer Complaint,2033
+2026-07,Dead/Dying Tree,1710
+2026-07,Sewer Maintenance,1547
+2026-07,Food Establishment,1398
+2026-07,For Hire Vehicle Complaint,1373
+2026-07,SAFETY,1351
+2026-07,Residential Disposal Complaint,1315
+2026-07,Lead,1248
+2026-07,Dead Animal,1118
+2026-07,Panhandling,1112
+2026-07,Indoor Air Quality,1095
+2026-07,Animal-Abuse,1003
+2026-07,Air Quality,985
+2026-07,Root/Sewer/Sidewalk Condition,958
+2026-07,Noise - Park,934
+2026-07,Curb Condition,927
+2026-07,Taxi Complaint,847
+2026-07,Drug Activity,797
+2026-07,Street Sweeping Complaint,796
+2026-07,Violation of Park Rules,714
+2026-07,Illegal Tree Damage,701
+2026-07,Drinking,629
+2026-07,Traffic,625
+2026-07,Real Time Enforcement,613
+2026-07,Lost Property,540
+2026-07,Smoking or Vaping,518
+2026-07,Water Conservation,512
+2026-07,Illegal Posting,499
+2026-07,Animal in a Park,483
+2026-07,Litter Basket Request,434
+2026-07,Cannabis Retailer,433
+2026-07,Street Sign - Damaged,419
+2026-07,Highway Condition,401
+2026-07,Plumbing,380
+2026-07,Wood Pile Remaining,360
+2026-07,Outdoor Dining,304
+2026-07,Unsanitary Animal Pvt Property,304
+2026-07,Standing Water,302
+2026-07,Special Projects Inspection Team (SPIT),301
+2026-07,Noise - Helicopter,296
+2026-07,Food Poisoning,286
+2026-07,Broken Parking Meter,275
+2026-07,Mobile Food Vendor,273
+2026-07,Street Sign - Missing,265
+2026-07,Lot Condition,263
+2026-07,Sanitation Worker or Vehicle Complaint,257
+2026-07,Dumpster Complaint,252
+2026-07,ELEVATOR,241
+2026-07,Street Sign - Dangling,233
+2026-07,Emergency Response Team (ERT),228
+2026-07,Day Care,206
+2026-07,Abandoned Bike,205
+2026-07,Unleashed Dog,184
+2026-07,Unsanitary Pigeon Condition,184
+2026-07,Bike/Roller/Skate,173
+2026-07,Commercial Disposal Complaint,168
+2026-07,Electrical,166
+2026-07,Urinating in Public,159
+2026-07,Noise - House of Worship,149
+2026-07,Litter Basket Complaint,148
+2026-07,Boilers,147
+2026-07,Hazardous Materials,140
+2026-07,Industrial Waste,138
+2026-07,Construction Lead Dust,132
+2026-07,Asbestos,126
+2026-07,Hazardous Material,119
+2026-07,OUTSIDE BUILDING,118
+2026-07,Bus Stop Shelter Complaint,108
+2026-07,Mosquitoes,108
+2026-07,Water Quality,95
+2026-07,Bike Rack,95
+2026-07,For Hire Vehicle Report,93
+2026-07,Indoor Sewage,80
+2026-07,Taxi Report,67
+2026-07,Uprooted Stump,64
+2026-07,Beach/Pool/Sauna Complaint,63
+2026-07,Green Infrastructure,62
+2026-07,Illegal Animal Kept as Pet,61
+2026-07,Harboring Bees/Wasps,54
+2026-07,Investigations and Discipline (IAD),54
+2026-07,BEST/Site Safety,53
+2026-07,New Tree Request,45
+2026-07,E-Scooter,45
+2026-07,Ferry Inquiry,42
+2026-07,LinkNYC,36
+2026-07,Cooling Tower,36
+2026-07,Poison Ivy,30
+2026-07,Green Taxi Complaint,30
+2026-07,Pet Sale,29
+2026-07,Mold,28
+2026-07,Ferry Complaint,27
+2026-07,Bus Stop Shelter Placement,25
+2026-07,Tattooing,25
+2026-07,Drinking Water,23
+2026-07,Disorderly Youth,22
+2026-07,AHV Inspection Unit,20
+2026-07,Scaffold Safety,17
+2026-07,Tobacco or Non-Tobacco Sale,14
+2026-07,Bridge Condition,13
+2026-07,Bench,13
+2026-07,Recycling Basket Complaint,13
+2026-07,Building Drinking Water Tank,12
+2026-07,Posting Advertisement,12
+2026-07,Illegal Animal Sold,11
+2026-07,Lifeguard,7
+2026-07,Plant,7
+2026-07,Municipal Parking Facility,7
+2026-07,Animal Facility - No Permit,7
+2026-07,Highway Sign - Damaged,6
+2026-07,Found Property,6
+2026-07,Highway Sign - Missing,6
+2026-07,Cranes and Derricks,6
+2026-07,Institution Disposal Complaint,5
+2026-07,Taxi Compliment,4
+2026-07,Unsanitary Animal Facility,4
+2026-07,Public Toilet,4
+2026-07,Highway Sign - Dangling,3
+2026-07,Special Natural Area District (SNAD),3
+2026-07,Taxi Licensee Complaint,2
+2026-07,Calorie Labeling,2
+2026-07,Tanning,2
+2026-07,Radioactive Material,2
+2026-07,X-Ray Machine/Equipment,2
+2026-07,Wayfinding,2
+2026-07,Window Guard,2
+2026-07,Borough Office,1
+2026-07,Transfer Station Complaint,1
+2026-07,Tunnel Condition,1
+2026-07,Green Taxi Report,1
+2026-07,Building Marshal's Office,1
+2026-07,Squeegee,1
+2026-07,Waste Water Treatment Plant,1
+2026-07,DEP Sidewalk Condition,1
+2026-08,Illegal Parking,51216
+2026-08,Noise - Residential,30622
+2026-08,Noise - Street/Sidewalk,23644
+2026-08,UNSANITARY CONDITION,14704
+2026-08,Blocked Driveway,14636
+2026-08,Street Condition,9552
+2026-08,Water Maintenance,8925
+2026-08,Dirty Condition,7153
+2026-08,Abandoned Vehicle,6815
+2026-08,PLUMBING,6708
+2026-08,PAINT/PLASTER,6630
+2026-08,WATER LEAK,5508
+2026-08,Sewer Maintenance,5060
+2026-08,Noise - Vehicle,5030
+2026-08,Encampment,4990
+2026-08,Noise - Commercial,4955
+2026-08,Damaged Tree,4814
+2026-08,Noise,4581
+2026-08,Traffic Signal Condition,4535
+2026-08,GENERAL,4492
+2026-08,DOOR/WINDOW,4434
+2026-08,Illegal Dumping,4042
+2026-08,General Construction/Plumbing,3939
+2026-08,Missed Collection,3723
+2026-08,Street Light Condition,3690
+2026-08,HEAT/HOT WATER,3682
+2026-08,Maintenance or Facility,3400
+2026-08,Homeless Person Assistance,3396
+2026-08,Building/Use,3335
+2026-08,Rodent,3253
+2026-08,ELECTRIC,3154
+2026-08,Derelict Vehicles,3127
+2026-08,Overgrown Tree/Branches,3004
+2026-08,FLOORING/STAIRS,2746
+2026-08,Obstruction,2745
+2026-08,Elevator,2646
+2026-08,Sidewalk Condition,2543
+2026-08,APPLIANCE,2523
+2026-08,Vendor Enforcement,2515
+2026-08,Non-Emergency Police Matter,2071
+2026-08,Consumer Complaint,2044
+2026-08,Graffiti,1652
+2026-08,For Hire Vehicle Complaint,1649
+2026-08,Lead,1505
+2026-08,Food Establishment,1452
+2026-08,Dead/Dying Tree,1419
+2026-08,Residential Disposal Complaint,1290
+2026-08,SAFETY,1289
+2026-08,Noise - Park,1238
+2026-08,Panhandling,1160
+2026-08,Air Quality,1141
+2026-08,Dead Animal,1074
+2026-08,Animal-Abuse,1073
+2026-08,Root/Sewer/Sidewalk Condition,1031
+2026-08,Drug Activity,947
+2026-08,Indoor Air Quality,946
+2026-08,Curb Condition,850
+2026-08,Taxi Complaint,787
+2026-08,Street Sweeping Complaint,702
+2026-08,Violation of Park Rules,674
+2026-08,Real Time Enforcement,670
+2026-08,Illegal Tree Damage,594
+2026-08,Drinking,590
+2026-08,Smoking or Vaping,553
+2026-08,Lost Property,546
+2026-08,Illegal Fireworks,515
+2026-08,Traffic,474
+2026-08,Litter Basket Request,467
+2026-08,Plumbing,453
+2026-08,Animal in a Park,436
+2026-08,Street Sign - Damaged,436
+2026-08,Water Conservation,414
+2026-08,Cannabis Retailer,390
+2026-08,Illegal Posting,387
+2026-08,Standing Water,386
+2026-08,Highway Condition,362
+2026-08,Special Projects Inspection Team (SPIT),341
+2026-08,Broken Parking Meter,315
+2026-08,Emergency Response Team (ERT),311
+2026-08,Unsanitary Animal Pvt Property,306
+2026-08,Sanitation Worker or Vehicle Complaint,289
+2026-08,Street Sign - Missing,281
+2026-08,Food Poisoning,279
+2026-08,Dumpster Complaint,276
+2026-08,Bike/Roller/Skate,274
+2026-08,Outdoor Dining,268
+2026-08,Mobile Food Vendor,267
+2026-08,Lot Condition,250
+2026-08,Street Sign - Dangling,248
+2026-08,ELEVATOR,243
+2026-08,Hazardous Material,229
+2026-08,Noise - Helicopter,229
+2026-08,Mosquitoes,224
+2026-08,Wood Pile Remaining,223
+2026-08,Unleashed Dog,218
+2026-08,Urinating in Public,205
+2026-08,Unsanitary Pigeon Condition,204
+2026-08,Electrical,201
+2026-08,Abandoned Bike,197
+2026-08,Litter Basket Complaint,184
+2026-08,Commercial Disposal Complaint,164
+2026-08,Boilers,155
+2026-08,Day Care,141
+2026-08,Industrial Waste,127
+2026-08,Construction Lead Dust,122
+2026-08,Green Infrastructure,120
+2026-08,OUTSIDE BUILDING,119
+2026-08,For Hire Vehicle Report,113
+2026-08,Water Quality,109
+2026-08,Noise - House of Worship,105
+2026-08,Bus Stop Shelter Complaint,97
+2026-08,Investigations and Discipline (IAD),88
+2026-08,Taxi Report,81
+2026-08,Indoor Sewage,79
+2026-08,Illegal Animal Kept as Pet,72
+2026-08,Harboring Bees/Wasps,66
+2026-08,Bike Rack,65
+2026-08,New Tree Request,64
+2026-08,Asbestos,54
+2026-08,Mold,52
+2026-08,Uprooted Stump,46
+2026-08,E-Scooter,46
+2026-08,BEST/Site Safety,42
+2026-08,Drinking Water,38
+2026-08,Bus Stop Shelter Placement,37
+2026-08,Green Taxi Complaint,37
+2026-08,Bridge Condition,37
+2026-08,Ferry Inquiry,30
+2026-08,AHV Inspection Unit,29
+2026-08,Pet Sale,28
+2026-08,Beach/Pool/Sauna Complaint,27
+2026-08,Tattooing,26
+2026-08,Poison Ivy,21
+2026-08,Illegal Animal Sold,21
+2026-08,LinkNYC,20
+2026-08,Animal Facility - No Permit,19
+2026-08,Ferry Complaint,17
+2026-08,Disorderly Youth,17
+2026-08,Bench,17
+2026-08,Waste Water Treatment Plant,17
+2026-08,Posting Advertisement,16
+2026-08,Taxi Compliment,11
+2026-08,Municipal Parking Facility,11
+2026-08,Tobacco or Non-Tobacco Sale,11
+2026-08,Public Toilet,9
+2026-08,Unsanitary Animal Facility,9
+2026-08,Cooling Tower,8
+2026-08,Scaffold Safety,8
+2026-08,Recycling Basket Complaint,8
+2026-08,Cranes and Derricks,7
+2026-08,Institution Disposal Complaint,6
+2026-08,Found Property,6
+2026-08,Dept of Investigations,5
+2026-08,Dry Weather Discharge,5
+2026-08,Lifeguard,5
+2026-08,Window Guard,4
+2026-08,Special Natural Area District (SNAD),4
+2026-08,Highway Sign - Missing,4
+2026-08,Incorrect Data,3
+2026-08,Green Taxi Report,3
+2026-08,Borough Office,3
+2026-08,Calorie Labeling,3
+2026-08,Building Drinking Water Tank,3
+2026-08,Radioactive Material,3
+2026-08,Special Operations,2
+2026-08,Transfer Station Complaint,2
+2026-08,Highway Sign - Dangling,2
+2026-08,Highway Sign - Damaged,2
+2026-08,Wayfinding,2
+2026-08,Building Condition,1
+2026-08,DEP Street Condition,1
+2026-08,Tanning,1
+2026-08,Oil or Gas Spill,1
+2026-09,Illegal Parking,53276
+2026-09,Noise - Residential,31602
+2026-09,Noise - Street/Sidewalk,19039
+2026-09,Blocked Driveway,16331
+2026-09,UNSANITARY CONDITION,14196
+2026-09,Street Condition,8027
+2026-09,Dirty Condition,6962
+2026-09,PAINT/PLASTER,6595
+2026-09,PLUMBING,6592
+2026-09,Abandoned Vehicle,6476
+2026-09,Damaged Tree,6089
+2026-09,Noise,5915
+2026-09,Noise - Commercial,5874
+2026-09,Noise - Vehicle,5414
+2026-09,Water Maintenance,5381
+2026-09,Encampment,5372
+2026-09,HEAT/HOT WATER,4862
+2026-09,WATER LEAK,4828
+2026-09,DOOR/WINDOW,4574
+2026-09,Street Light Condition,4489
+2026-09,GENERAL,4145
+2026-09,Illegal Dumping,4119
+2026-09,General Construction/Plumbing,3970
+2026-09,Traffic Signal Condition,3844
+2026-09,Homeless Person Assistance,3774
+2026-09,Overgrown Tree/Branches,3491
+2026-09,Missed Collection,3330
+2026-09,Sewer Maintenance,3121
+2026-09,ELECTRIC,3066
+2026-09,Derelict Vehicles,2971
+2026-09,Maintenance or Facility,2934
+2026-09,FLOORING/STAIRS,2735
+2026-09,Rodent,2670
+2026-09,Sidewalk Condition,2593
+2026-09,Obstruction,2576
+2026-09,APPLIANCE,2502
+2026-09,Vendor Enforcement,2154
+2026-09,Non-Emergency Police Matter,2126
+2026-09,Building/Use,2071
+2026-09,Elevator,2014
+2026-09,Consumer Complaint,2006
+2026-09,Illegal Tree Damage,1738
+2026-09,Lead,1660
+2026-09,For Hire Vehicle Complaint,1640
+2026-09,Dead/Dying Tree,1392
+2026-09,Residential Disposal Complaint,1385
+2026-09,Food Establishment,1366
+2026-09,Graffiti,1311
+2026-09,Panhandling,1290
+2026-09,SAFETY,1261
+2026-09,Traffic,1162
+2026-09,Dead Animal,1146
+2026-09,Root/Sewer/Sidewalk Condition,1126
+2026-09,Air Quality,1098
+2026-09,Animal-Abuse,1097
+2026-09,Indoor Air Quality,942
+2026-09,Noise - Park,935
+2026-09,Taxi Complaint,882
+2026-09,Curb Condition,793
+2026-09,Drug Activity,788
+2026-09,Street Sweeping Complaint,767
+2026-09,Lost Property,576
+2026-09,Real Time Enforcement,539
+2026-09,Smoking or Vaping,520
+2026-09,Drinking,510
+2026-09,Violation of Park Rules,486
+2026-09,Illegal Posting,486
+2026-09,Noise - Helicopter,484
+2026-09,Litter Basket Request,483
+2026-09,Animal in a Park,454
+2026-09,Street Sign - Damaged,453
+2026-09,Cannabis Retailer,433
+2026-09,Highway Condition,399
+2026-09,Special Projects Inspection Team (SPIT),393
+2026-09,Emergency Response Team (ERT),362
+2026-09,Street Sign - Dangling,352
+2026-09,Plumbing,348
+2026-09,Water Conservation,344
+2026-09,Illegal Fireworks,335
+2026-09,Broken Parking Meter,295
+2026-09,Street Sign - Missing,293
+2026-09,Standing Water,280
+2026-09,Sanitation Worker or Vehicle Complaint,270
+2026-09,Outdoor Dining,266
+2026-09,Hazardous Material,262
+2026-09,Unsanitary Animal Pvt Property,260
+2026-09,ELEVATOR,249
+2026-09,Food Poisoning,240
+2026-09,Wood Pile Remaining,237
+2026-09,Mobile Food Vendor,227
+2026-09,Bike/Roller/Skate,221
+2026-09,Urinating in Public,219
+2026-09,Dumpster Complaint,212
+2026-09,Boilers,211
+2026-09,Unleashed Dog,206
+2026-09,Litter Basket Complaint,201
+2026-09,Electrical,201
+2026-09,Lot Condition,193
+2026-09,Unsanitary Pigeon Condition,189
+2026-09,Mosquitoes,181
+2026-09,Abandoned Bike,178
+2026-09,Noise - House of Worship,167
+2026-09,Commercial Disposal Complaint,148
+2026-09,Industrial Waste,145
+2026-09,Day Care,142
+2026-09,Bus Stop Shelter Complaint,128
+2026-09,OUTSIDE BUILDING,124
+2026-09,Water Quality,105
+2026-09,New Tree Request,105
+2026-09,Construction Lead Dust,103
+2026-09,For Hire Vehicle Report,101
+2026-09,Green Infrastructure,100
+2026-09,Harboring Bees/Wasps,98
+2026-09,Animal Facility - No Permit,75
+2026-09,Bike Rack,71
+2026-09,Taxi Report,67
+2026-09,Illegal Animal Kept as Pet,58
+2026-09,Indoor Sewage,57
+2026-09,Investigations and Discipline (IAD),57
+2026-09,Asbestos,55
+2026-09,BEST/Site Safety,51
+2026-09,Green Taxi Complaint,51
+2026-09,Mold,48
+2026-09,E-Scooter,44
+2026-09,Uprooted Stump,43
+2026-09,Bus Stop Shelter Placement,39
+2026-09,Bridge Condition,38
+2026-09,Drinking Water,35
+2026-09,Ferry Inquiry,32
+2026-09,Waste Water Treatment Plant,29
+2026-09,AHV Inspection Unit,26
+2026-09,Bench,25
+2026-09,Tobacco or Non-Tobacco Sale,25
+2026-09,LinkNYC,25
+2026-09,Pet Sale,24
+2026-09,Tattooing,24
+2026-09,Ferry Complaint,21
+2026-09,Beach/Pool/Sauna Complaint,20
+2026-09,Disorderly Youth,18
+2026-09,Poison Ivy,17
+2026-09,Illegal Animal Sold,16
+2026-09,Recycling Basket Complaint,12
+2026-09,Building Drinking Water Tank,12
+2026-09,Cooling Tower,12
+2026-09,Public Toilet,11
+2026-09,Posting Advertisement,11
+2026-09,Unsanitary Animal Facility,10
+2026-09,Highway Sign - Damaged,10
+2026-09,Scaffold Safety,10
+2026-09,Cranes and Derricks,7
+2026-09,Transfer Station Complaint,6
+2026-09,Institution Disposal Complaint,5
+2026-09,Special Natural Area District (SNAD),5
+2026-09,Highway Sign - Missing,5
+2026-09,Taxi Compliment,5
+2026-09,Wayfinding,4
+2026-09,Snow or Ice,3
+2026-09,Found Property,3
+2026-09,Green Taxi Report,3
+2026-09,Radioactive Material,3
+2026-09,Highway Sign - Dangling,2
+2026-09,DEP Street Condition,2
+2026-09,X-Ray Machine/Equipment,2
+2026-09,Window Guard,2
+2026-09,Public Payphone Complaint,1
+2026-09,DEP Sidewalk Condition,1
+2026-09,Incorrect Data,1
+2026-09,Tanning,1
+2026-09,Taxi Licensee Complaint,1
+2026-09,Dry Weather Discharge,1
+2026-09,Tunnel Condition,1
+2026-09,Special Operations,1
+2026-09,Borough Office,1
+2026-09,Calorie Labeling,1
+2026-09,Municipal Parking Facility,1

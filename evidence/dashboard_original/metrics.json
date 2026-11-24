@@ -1,0 +1,813 @@
+{
+  "status": "MEASURED",
+  "source": "NYC_311_PUBLIC_AGGREGATED",
+  "csv": "data/nyc_daily_2024_2025.csv",
+  "target": "future 2-day complaint count strictly greater than per-node 75th percentile of TRAIN future 2-day counts",
+  "target_quantile": 0.75,
+  "horizon_days": 2,
+  "lookback_days": 28,
+  "graph": "spatial",
+  "seed": 42,
+  "device": "mps",
+  "dates": {
+    "start": "2024-01-01",
+    "end": "2025-12-31",
+    "train_end": "2025-05-23",
+    "validation_start": "2025-05-26",
+    "test_start": "2025-09-13"
+  },
+  "nodes": [
+    {
+      "zip": "10467",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 78.75
+    },
+    {
+      "zip": "10467",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 4.0
+    },
+    {
+      "zip": "10467",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 2.0
+    },
+    {
+      "zip": "10467",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "10458",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 72.75
+    },
+    {
+      "zip": "10458",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 4.0
+    },
+    {
+      "zip": "10458",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 2.0
+    },
+    {
+      "zip": "10458",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "10452",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 59.0
+    },
+    {
+      "zip": "10452",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 4.0
+    },
+    {
+      "zip": "10452",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 2.0
+    },
+    {
+      "zip": "10452",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "10457",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 65.75
+    },
+    {
+      "zip": "10457",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 4.0
+    },
+    {
+      "zip": "10457",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "10457",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "10468",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 63.75
+    },
+    {
+      "zip": "10468",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 4.0
+    },
+    {
+      "zip": "10468",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 2.0
+    },
+    {
+      "zip": "10468",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "11226",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 65.75
+    },
+    {
+      "zip": "11226",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 3.0
+    },
+    {
+      "zip": "11226",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 2.0
+    },
+    {
+      "zip": "11226",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 2.0
+    },
+    {
+      "zip": "10453",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 57.75
+    },
+    {
+      "zip": "10453",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 4.0
+    },
+    {
+      "zip": "10453",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "10453",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "10456",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 49.0
+    },
+    {
+      "zip": "10456",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 3.0
+    },
+    {
+      "zip": "10456",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "10456",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "10462",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 45.0
+    },
+    {
+      "zip": "10462",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 3.0
+    },
+    {
+      "zip": "10462",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 2.0
+    },
+    {
+      "zip": "10462",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "10032",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 44.0
+    },
+    {
+      "zip": "10032",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 2.0
+    },
+    {
+      "zip": "10032",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 2.0
+    },
+    {
+      "zip": "10032",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 0.0
+    },
+    {
+      "zip": "10031",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 40.0
+    },
+    {
+      "zip": "10031",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 3.0
+    },
+    {
+      "zip": "10031",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "10031",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 0.0
+    },
+    {
+      "zip": "11213",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 40.0
+    },
+    {
+      "zip": "11213",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 2.0
+    },
+    {
+      "zip": "11213",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 2.0
+    },
+    {
+      "zip": "11213",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "11225",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 40.0
+    },
+    {
+      "zip": "11225",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 3.0
+    },
+    {
+      "zip": "11225",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 2.0
+    },
+    {
+      "zip": "11225",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "10469",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 38.0
+    },
+    {
+      "zip": "10469",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 4.0
+    },
+    {
+      "zip": "10469",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 2.0
+    },
+    {
+      "zip": "10469",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 2.0
+    },
+    {
+      "zip": "10463",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 38.0
+    },
+    {
+      "zip": "10463",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 4.0
+    },
+    {
+      "zip": "10463",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 3.0
+    },
+    {
+      "zip": "10463",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "10033",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 39.0
+    },
+    {
+      "zip": "10033",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 2.0
+    },
+    {
+      "zip": "10033",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "10033",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 0.0
+    },
+    {
+      "zip": "10034",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 39.0
+    },
+    {
+      "zip": "10034",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 3.0
+    },
+    {
+      "zip": "10034",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "10034",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 0.0
+    },
+    {
+      "zip": "10466",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 39.75
+    },
+    {
+      "zip": "10466",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 4.0
+    },
+    {
+      "zip": "10466",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 2.0
+    },
+    {
+      "zip": "10466",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 2.0
+    },
+    {
+      "zip": "10459",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 33.0
+    },
+    {
+      "zip": "10459",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 3.0
+    },
+    {
+      "zip": "10459",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "10459",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "10460",
+      "complaint_type": "HEAT/HOT WATER",
+      "high_demand_threshold": 33.0
+    },
+    {
+      "zip": "10460",
+      "complaint_type": "Water System",
+      "high_demand_threshold": 3.0
+    },
+    {
+      "zip": "10460",
+      "complaint_type": "Street Condition",
+      "high_demand_threshold": 1.0
+    },
+    {
+      "zip": "10460",
+      "complaint_type": "Sewer",
+      "high_demand_threshold": 1.0
+    }
+  ],
+  "results": {
+    "Logistic regression": {
+      "validation_f1_threshold": 0.57,
+      "validation": {
+        "n": 8640,
+        "positives": 2264,
+        "positive_rate": 0.262037037037037,
+        "threshold": 0.57,
+        "f1": 0.5040689325035902,
+        "precision": 0.5501567398119123,
+        "recall": 0.4651060070671378,
+        "average_precision_pr_auc": 0.5801382235903912,
+        "roc_auc": 0.7146386792787439,
+        "confusion_matrix_0_1": [
+          [
+            5515,
+            861
+          ],
+          [
+            1211,
+            1053
+          ]
+        ]
+      },
+      "test": {
+        "n": 8640,
+        "positives": 1894,
+        "positive_rate": 0.21921296296296297,
+        "threshold": 0.57,
+        "f1": 0.6085707445535073,
+        "precision": 0.5567236092860272,
+        "recall": 0.6710665258711721,
+        "average_precision_pr_auc": 0.6306037724928635,
+        "roc_auc": 0.8057185751437513,
+        "confusion_matrix_0_1": [
+          [
+            5734,
+            1012
+          ],
+          [
+            623,
+            1271
+          ]
+        ]
+      }
+    },
+    "GCN-GRU": {
+      "validation_best_AP": 0.7462132812178682,
+      "best_epoch": 20,
+      "validation_f1_threshold": 0.6399999999999999,
+      "elapsed_sec": 12.97,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.0607765566918157,
+          "validation_ap": 0.616277068534901
+        },
+        {
+          "epoch": 2,
+          "train_loss": 1.0073947387356912,
+          "validation_ap": 0.6190183648361093
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.9880482650572254,
+          "validation_ap": 0.6238218356671379
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.9746681240297133,
+          "validation_ap": 0.6322358585180249
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.9571187534639912,
+          "validation_ap": 0.6519249268667829
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.9418557574672084,
+          "validation_ap": 0.6754513945659263
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.930884470862727,
+          "validation_ap": 0.6969660078373219
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.9215372108644054,
+          "validation_ap": 0.7196146115221497
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.9004427309959165,
+          "validation_ap": 0.7303813351261673
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.8908652163320973,
+          "validation_ap": 0.736064520875902
+        },
+        {
+          "epoch": 11,
+          "train_loss": 0.8808158001592082,
+          "validation_ap": 0.7410937648909879
+        },
+        {
+          "epoch": 12,
+          "train_loss": 0.87783492765119,
+          "validation_ap": 0.7365778399731402
+        },
+        {
+          "epoch": 13,
+          "train_loss": 0.8757013813141854,
+          "validation_ap": 0.7434188354276797
+        },
+        {
+          "epoch": 14,
+          "train_loss": 0.8699974629186815,
+          "validation_ap": 0.7419115846340057
+        },
+        {
+          "epoch": 15,
+          "train_loss": 0.8686864702932297,
+          "validation_ap": 0.7395037929055637
+        },
+        {
+          "epoch": 16,
+          "train_loss": 0.8657122811963481,
+          "validation_ap": 0.7370093916933562
+        },
+        {
+          "epoch": 17,
+          "train_loss": 0.8608027658154888,
+          "validation_ap": 0.7438937460012405
+        },
+        {
+          "epoch": 18,
+          "train_loss": 0.8580240568807048,
+          "validation_ap": 0.7408109230297858
+        },
+        {
+          "epoch": 19,
+          "train_loss": 0.8607530132416756,
+          "validation_ap": 0.7447848365292458
+        },
+        {
+          "epoch": 20,
+          "train_loss": 0.8619144808861517,
+          "validation_ap": 0.7462132812178682
+        },
+        {
+          "epoch": 21,
+          "train_loss": 0.8558583817174358,
+          "validation_ap": 0.7455470592971165
+        },
+        {
+          "epoch": 22,
+          "train_loss": 0.8535016255993997,
+          "validation_ap": 0.7411709464391736
+        },
+        {
+          "epoch": 23,
+          "train_loss": 0.8504683106176315,
+          "validation_ap": 0.7419293977491932
+        },
+        {
+          "epoch": 24,
+          "train_loss": 0.8503614702532368,
+          "validation_ap": 0.7424891115061693
+        },
+        {
+          "epoch": 25,
+          "train_loss": 0.8475251063223808,
+          "validation_ap": 0.7399380294654045
+        },
+        {
+          "epoch": 26,
+          "train_loss": 0.8470587768862324,
+          "validation_ap": 0.743695162850731
+        },
+        {
+          "epoch": 27,
+          "train_loss": 0.8481860679964865,
+          "validation_ap": 0.7451220487036444
+        },
+        {
+          "epoch": 28,
+          "train_loss": 0.8474225709515233,
+          "validation_ap": 0.7395533704721707
+        }
+      ],
+      "validation": {
+        "n": 8640,
+        "positives": 2264,
+        "positive_rate": 0.262037037037037,
+        "threshold": 0.6399999999999999,
+        "f1": 0.6484059272563988,
+        "precision": 0.6593607305936073,
+        "recall": 0.6378091872791519,
+        "average_precision_pr_auc": 0.7462132812178682,
+        "roc_auc": 0.8507087227500654,
+        "confusion_matrix_0_1": [
+          [
+            5630,
+            746
+          ],
+          [
+            820,
+            1444
+          ]
+        ]
+      },
+      "test": {
+        "n": 8640,
+        "positives": 1894,
+        "positive_rate": 0.21921296296296297,
+        "threshold": 0.6399999999999999,
+        "f1": 0.6490428441203282,
+        "precision": 0.7644953471725126,
+        "recall": 0.5638859556494192,
+        "average_precision_pr_auc": 0.6627344784416926,
+        "roc_auc": 0.8026831027561876,
+        "confusion_matrix_0_1": [
+          [
+            6417,
+            329
+          ],
+          [
+            826,
+            1068
+          ]
+        ]
+      }
+    },
+    "GRU (no graph)": {
+      "validation_best_AP": 0.7432519626911045,
+      "best_epoch": 12,
+      "validation_f1_threshold": 0.6499999999999999,
+      "elapsed_sec": 8.77,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.0529883004003955,
+          "validation_ap": 0.6139384566848977
+        },
+        {
+          "epoch": 2,
+          "train_loss": 1.0071262371155523,
+          "validation_ap": 0.6247907901543459
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.9850333063833175,
+          "validation_ap": 0.6311073135243566
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.965836182717354,
+          "validation_ap": 0.647874463053861
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.9529418887630585,
+          "validation_ap": 0.6806443608895407
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.9440979496125252,
+          "validation_ap": 0.7017722320868174
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.9216690736432229,
+          "validation_ap": 0.7295455308712128
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.9084869315547328,
+          "validation_ap": 0.7302994460104646
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.8960046441324295,
+          "validation_ap": 0.7380124655183994
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.890111877072242,
+          "validation_ap": 0.7369677222319572
+        },
+        {
+          "epoch": 11,
+          "train_loss": 0.8879347020579923,
+          "validation_ap": 0.7326669835866775
+        },
+        {
+          "epoch": 12,
+          "train_loss": 0.8809978711989618,
+          "validation_ap": 0.7432519626911045
+        },
+        {
+          "epoch": 13,
+          "train_loss": 0.8756313920021057,
+          "validation_ap": 0.7417986470856348
+        },
+        {
+          "epoch": 14,
+          "train_loss": 0.8714951372915699,
+          "validation_ap": 0.7330089216544803
+        },
+        {
+          "epoch": 15,
+          "train_loss": 0.8704581683681857,
+          "validation_ap": 0.7427589609158448
+        },
+        {
+          "epoch": 16,
+          "train_loss": 0.8704323691706504,
+          "validation_ap": 0.7353679412017514
+        },
+        {
+          "epoch": 17,
+          "train_loss": 0.8665408722815975,
+          "validation_ap": 0.7386294104493966
+        },
+        {
+          "epoch": 18,
+          "train_loss": 0.863835463600774,
+          "validation_ap": 0.7415025676915875
+        },
+        {
+          "epoch": 19,
+          "train_loss": 0.8662252829920861,
+          "validation_ap": 0.7335688752708469
+        },
+        {
+          "epoch": 20,
+          "train_loss": 0.8615532229023595,
+          "validation_ap": 0.7373649731956202
+        }
+      ],
+      "validation": {
+        "n": 8640,
+        "positives": 2264,
+        "positive_rate": 0.262037037037037,
+        "threshold": 0.6499999999999999,
+        "f1": 0.639981908638625,
+        "precision": 0.6556997219647822,
+        "recall": 0.625,
+        "average_precision_pr_auc": 0.7432519626911045,
+        "roc_auc": 0.8451356691502143,
+        "confusion_matrix_0_1": [
+          [
+            5633,
+            743
+          ],
+          [
+            849,
+            1415
+          ]
+        ]
+      },
+      "test": {
+        "n": 8640,
+        "positives": 1894,
+        "positive_rate": 0.21921296296296297,
+        "threshold": 0.6499999999999999,
+        "f1": 0.6496147919876734,
+        "precision": 0.7801628423390081,
+        "recall": 0.5564941921858501,
+        "average_precision_pr_auc": 0.6747863305515623,
+        "roc_auc": 0.8025133827202854,
+        "confusion_matrix_0_1": [
+          [
+            6449,
+            297
+          ],
+          [
+            840,
+            1054
+          ]
+        ]
+      }
+    }
+  },
+  "communities": {
+    "snapshots": 21,
+    "mean_modularity": 0.6185467526083706,
+    "mean_stability_ari": 0.9840432071660665
+  }
+}

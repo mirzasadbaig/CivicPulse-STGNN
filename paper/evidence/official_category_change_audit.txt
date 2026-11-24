@@ -1,0 +1,123 @@
+CivicPulse official API category investigation
+Dataset: https://data.cityofnewyork.us/resource/erm2-nwe9.json
+Month windows: July--September 2026, start inclusive, end exclusive
+
+=== 2026-07 ===
+Total requests: 343,194
+Distinct complaint types: 176
+Exact old categories:
+  Water System: 15,934
+  Sewer: 2,921
+  HEAT/HOT WATER: 4,331
+  Street Condition: 10,145
+Other water/sewer-like category names (not proof of equivalence):
+  Water System: 15,934
+  PLUMBING: 7,996
+  WATER LEAK: 4,383
+  HEAT/HOT WATER: 4,331
+  General Construction/Plumbing: 3,719
+  Sewer: 2,921
+  Water Maintenance: 2,238
+  Sewer Maintenance: 1,547
+  Root/Sewer/Sidewalk Condition: 958
+  Water Conservation: 512
+  Plumbing: 380
+  Standing Water: 302
+  Water Quality: 95
+  Drinking Water: 23
+  Building Drinking Water Tank: 12
+  Waste Water Treatment Plant: 1
+Top 12 complaint types:
+  Illegal Parking: 49,082
+  Noise - Residential: 29,971
+  Noise - Street/Sidewalk: 25,405
+  Water System: 15,934
+  Blocked Driveway: 14,686
+  UNSANITARY CONDITION: 13,225
+  Street Condition: 10,145
+  PLUMBING: 7,996
+  Damaged Tree: 7,991
+  Abandoned Vehicle: 6,962
+  Illegal Fireworks: 6,923
+  Dirty Condition: 6,810
+Agency DEP count:
+  DEP: 30,215
+
+=== 2026-08 ===
+Total requests: 328,930
+Distinct complaint types: 173
+Exact old categories:
+  Water System: 0
+  Sewer: 0
+  HEAT/HOT WATER: 3,682
+  Street Condition: 9,552
+Other water/sewer-like category names (not proof of equivalence):
+  Water Maintenance: 8,925
+  PLUMBING: 6,708
+  WATER LEAK: 5,508
+  Sewer Maintenance: 5,060
+  General Construction/Plumbing: 3,939
+  HEAT/HOT WATER: 3,682
+  Root/Sewer/Sidewalk Condition: 1,031
+  Plumbing: 453
+  Water Conservation: 414
+  Standing Water: 386
+  Water Quality: 109
+  Drinking Water: 38
+  Waste Water Treatment Plant: 17
+  Building Drinking Water Tank: 3
+Top 12 complaint types:
+  Illegal Parking: 51,216
+  Noise - Residential: 30,622
+  Noise - Street/Sidewalk: 23,644
+  UNSANITARY CONDITION: 14,704
+  Blocked Driveway: 14,636
+  Street Condition: 9,552
+  Water Maintenance: 8,925
+  Dirty Condition: 7,153
+  Abandoned Vehicle: 6,815
+  PLUMBING: 6,708
+  PAINT/PLASTER: 6,630
+  WATER LEAK: 5,508
+Agency DEP count:
+  DEP: 22,233
+
+=== 2026-09 ===
+Total requests: 323,646
+Distinct complaint types: 175
+Exact old categories:
+  Water System: 0
+  Sewer: 0
+  HEAT/HOT WATER: 4,862
+  Street Condition: 8,027
+Other water/sewer-like category names (not proof of equivalence):
+  PLUMBING: 6,592
+  Water Maintenance: 5,381
+  HEAT/HOT WATER: 4,862
+  WATER LEAK: 4,828
+  General Construction/Plumbing: 3,970
+  Sewer Maintenance: 3,121
+  Root/Sewer/Sidewalk Condition: 1,126
+  Plumbing: 348
+  Water Conservation: 344
+  Standing Water: 280
+  Water Quality: 105
+  Drinking Water: 35
+  Waste Water Treatment Plant: 29
+  Building Drinking Water Tank: 12
+Top 12 complaint types:
+  Illegal Parking: 53,276
+  Noise - Residential: 31,602
+  Noise - Street/Sidewalk: 19,039
+  Blocked Driveway: 16,331
+  UNSANITARY CONDITION: 14,196
+  Street Condition: 8,027
+  Dirty Condition: 6,962
+  PAINT/PLASTER: 6,595
+  PLUMBING: 6,592
+  Abandoned Vehicle: 6,476
+  Damaged Tree: 6,089
+  Noise: 5,915
+Agency DEP count:
+  DEP: 18,161
+

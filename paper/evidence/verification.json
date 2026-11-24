@@ -1,0 +1,8 @@
+{
+  "training_runs": 105,
+  "unique_random_permutations": 20,
+  "metric_rows": 210,
+  "max_abs_metric_discrepancy": 5.551115123125783e-17,
+  "labels_match_gbm": true,
+  "scope": "Saved-output checks, not independent retraining; all diagnostics post hoc."
+}

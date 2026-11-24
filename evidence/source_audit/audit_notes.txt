@@ -1,0 +1,61 @@
+CivicPulse NYC 311 — data coverage audit (not a model evaluation)
+2025 compared rows: 107,781; requests: 467,503
+2026 compared rows: 82,273; requests: 354,898
+Duplicate grouped keys: {'2025': 0, '2026': 0}
+Source labels: {'2025': ['NYC_311_PUBLIC_AGGREGATED'], '2026': ['NYC_311_PUBLIC_AGGREGATED']}
+
+Monthly comparison (2025 vs 2026; year-specific counts):
+       2025_grouped_rows  2025_complaints  2025_days_present  2026_grouped_rows  2026_complaints  2026_days_present  2025_requests_per_day  2025_groups_per_day  2026_requests_per_day  2026_groups_per_day  2026_vs_2025_requests_pct  2026_vs_2025_groups_pct
+month                                                                                                                                                                                                                                                          
+1                  10409            79444                 31              10113            90990                 31                 2562.7                335.8                 2935.2                326.2                      114.5                     97.2
+2                   9122            51343                 28              10264            73262                 28                 1833.7                325.8                 2616.5                366.6                      142.7                    112.5
+3                   9837            36934                 31              12683            53360                 31                 1191.4                317.3                 1721.3                409.1                      144.5                    128.9
+4                   8711            26353                 30              10681            35897                 30                  878.4                290.4                 1196.6                356.0                      136.2                    122.6
+5                   8542            18437                 31              10220            27391                 31                  594.7                275.5                  883.6                329.7                      148.6                    119.6
+6                   8248            26036                 30               9478            22818                 30                  867.9                274.9                  760.6                315.9                       87.6                    114.9
+7                   8805            24813                 31               9188            30055                 31                  800.4                284.0                  969.5                296.4                      121.1                    104.3
+8                   7939            16328                 31               4782            10410                 31                  526.7                256.1                  335.8                154.3                       63.8                     60.2
+9                   7394            13428                 30               4864            10715                 30                  447.6                246.5                  357.2                162.1                       79.8                     65.8
+
+Flagged checks:
+- 2026-08: >30% drop in daily ZIP/category groups compared with preceding month
+
+Interpretation: a decline can reflect seasonality, changing reporting or incomplete exports. This audit does not distinguish those causes by itself.
+Before publication, check category_monthly_comparison.csv against official raw source counts for the same months.
+
+Frozen node counts:
+{
+  "2025": {
+    "selected_complaints": 158624,
+    "selected_grouped_rows": 14805,
+    "monthly_selected_complaints": {
+      "1": 30303,
+      "2": 18500,
+      "3": 11978,
+      "4": 7804,
+      "5": 3619,
+      "6": 9359,
+      "7": 8059,
+      "8": 3896,
+      "9": 2444,
+      "10": 14218,
+      "11": 20511,
+      "12": 27933
+    }
+  },
+  "2026": {
+    "selected_complaints": 105327,
+    "selected_grouped_rows": 11486,
+    "monthly_selected_complaints": {
+      "1": 32783,
+      "2": 25139,
+      "3": 14578,
+      "4": 9463,
+      "5": 5480,
+      "6": 4779,
+      "7": 8910,
+      "8": 2005,
+      "9": 2190
+    }
+  }
+}

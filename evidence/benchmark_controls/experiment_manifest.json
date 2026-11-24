@@ -1,0 +1,192 @@
+{
+  "status": "REVIEWER_EXPERIMENT_REAL_DATA",
+  "source": "NYC_311_PUBLIC_AGGREGATED",
+  "past_sha256": "5f98e176da8168a4b5dbc409c958b5c58322d835d43ad8f96cd289110d012fec",
+  "future_sha256": "e442a3de8c0dd7652418816a28b0c118220b8921be910521cba163e8c25f8afe",
+  "windows": {
+    "Jan-Jul 2026": {
+      "anchors": 210,
+      "cases": 16800,
+      "prevalence": 0.29726189374923706
+    },
+    "Jan-Sep 2026": {
+      "anchors": 271,
+      "cases": 21680,
+      "prevalence": 0.25170662999153137
+    }
+  },
+  "model_seeds": [
+    7,
+    17,
+    27,
+    37,
+    42
+  ],
+  "shuffled_graph_permutation_seed": 20261124,
+  "shuffled_graph_permutation_indices": [
+    7,
+    28,
+    79,
+    32,
+    21,
+    59,
+    65,
+    13,
+    51,
+    29,
+    53,
+    5,
+    47,
+    44,
+    62,
+    18,
+    71,
+    58,
+    60,
+    55,
+    35,
+    19,
+    2,
+    26,
+    54,
+    1,
+    11,
+    9,
+    16,
+    25,
+    39,
+    14,
+    37,
+    36,
+    42,
+    22,
+    49,
+    70,
+    56,
+    76,
+    24,
+    4,
+    64,
+    69,
+    27,
+    50,
+    43,
+    48,
+    67,
+    75,
+    30,
+    23,
+    63,
+    38,
+    0,
+    15,
+    61,
+    74,
+    68,
+    17,
+    10,
+    34,
+    77,
+    40,
+    57,
+    46,
+    31,
+    33,
+    41,
+    78,
+    12,
+    45,
+    6,
+    52,
+    8,
+    20,
+    72,
+    66,
+    3,
+    73
+  ],
+  "shuffled_graph_interpretation": "fixed adjacency node relabeling; preserves multiset of global weights, not node-specific degree",
+  "fit_data": "2024-2025 training anchors; checkpoint and threshold selected only using 2025 validation",
+  "no_training_on_2026": true,
+  "window_jan_jul_is_post_hoc": true,
+  "2026_jan_sep_has_known_complaint_category_break": true,
+  "years_compared_for_seasonality": "same Jan-Jul calendar months of 2025 and 2026, selected frozen nodes",
+  "bootstrap": {
+    "Jan-Jul 2026": {
+      "method": "paired moving-block bootstrap over consecutive anchor dates",
+      "block_days": 28,
+      "requested_replicates": 300,
+      "valid_replicates": 300,
+      "seed": 20261124,
+      "graph_seeds": [
+        7,
+        17,
+        27,
+        37,
+        42
+      ],
+      "fixed_thresholds_selected_on_2025_validation": true,
+      "conditional_on": "fitted model seeds, selected ZIPs, and evaluated 2026 period",
+      "delta_AP_graph_minus_identity": {
+        "point": 0.01556822937947051,
+        "percentile_95_CI": [
+          0.003385042956388858,
+          0.02577832612693256
+        ],
+        "fraction_bootstrap_nonpositive": 0.0
+      },
+      "delta_F1_graph_minus_identity": {
+        "point": 0.008232088667914117,
+        "percentile_95_CI": [
+          -0.002357174197504598,
+          0.017812365928970154
+        ],
+        "fraction_bootstrap_nonpositive": 0.08666666666666667
+      }
+    },
+    "Jan-Sep 2026": {
+      "method": "paired moving-block bootstrap over consecutive anchor dates",
+      "block_days": 28,
+      "requested_replicates": 300,
+      "valid_replicates": 300,
+      "seed": 20261124,
+      "graph_seeds": [
+        7,
+        17,
+        27,
+        37,
+        42
+      ],
+      "fixed_thresholds_selected_on_2025_validation": true,
+      "conditional_on": "fitted model seeds, selected ZIPs, and evaluated 2026 period",
+      "delta_AP_graph_minus_identity": {
+        "point": 0.025453914539992815,
+        "percentile_95_CI": [
+          0.008212669214381912,
+          0.04281778753100549
+        ],
+        "fraction_bootstrap_nonpositive": 0.0
+      },
+      "delta_F1_graph_minus_identity": {
+        "point": 0.012296722435377105,
+        "percentile_95_CI": [
+          0.0029486856228850976,
+          0.02714248448430535
+        ],
+        "fraction_bootstrap_nonpositive": 0.006666666666666667
+      }
+    }
+  },
+  "environment": {
+    "python": "3.13.5",
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "torch": "2.15.0",
+    "numpy": "2.5.5"
+  },
+  "limitations": [
+    "Single fixed randomized topology; additional graph permutations strengthen controls.",
+    "Bootstrap CIs conditional on fitted seeds and selected geography, not city/generalization bounds.",
+    "28-day overlapping forecasts introduce strong dependence; resample whole dates together.",
+    "Category discontinuity not repaired; Jan-Jul was chosen after the issue was identified."
+  ]
+}

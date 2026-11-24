@@ -1,0 +1,180 @@
+{
+  "status": "VALIDATION_ONLY",
+  "source": "NYC_311_PUBLIC_AGGREGATED",
+  "seeds": [
+    7,
+    17,
+    27,
+    37,
+    42
+  ],
+  "removed_graph_input_feature": "neighbor count",
+  "controlled_inputs_and_splits": true,
+  "identical_seed_reset_per_model": true,
+  "F1_validation_threshold_optimized_on_same_validation_set": true,
+  "notes": "For graph comparison use validation AP as primary; do not treat these as new held-out test scores.",
+  "statistics": {
+    "GCN-GRU hybrid": {
+      "F1": {
+        "mean": 0.6425156489027564,
+        "sd": 0.0054865635399098675
+      },
+      "PR_AUC": {
+        "mean": 0.7487057018374719,
+        "sd": 0.006449791732309617
+      }
+    },
+    "GCN-GRU spatial": {
+      "F1": {
+        "mean": 0.6440612567165458,
+        "sd": 0.00447030276681725
+      },
+      "PR_AUC": {
+        "mean": 0.7499165635645814,
+        "sd": 0.0047848089535934115
+      }
+    },
+    "GRU identity adjacency": {
+      "F1": {
+        "mean": 0.6322822917783724,
+        "sd": 0.0032822546896228897
+      },
+      "PR_AUC": {
+        "mean": 0.7321754455617315,
+        "sd": 0.002112872029468068
+      }
+    },
+    "Logistic (no graph-derived features)": {
+      "F1": {
+        "mean": 0.49447825107054316,
+        "sd": 0.0
+      },
+      "PR_AUC": {
+        "mean": 0.5655498607682463,
+        "sd": 0.0
+      }
+    }
+  },
+  "rows": [
+    {
+      "seed": 7,
+      "model": "Logistic (no graph-derived features)",
+      "F1": 0.49447825107054316,
+      "PR_AUC": 0.5655498607682463
+    },
+    {
+      "seed": 7,
+      "model": "GCN-GRU spatial",
+      "F1": 0.6394712853236099,
+      "PR_AUC": 0.7481665923672228
+    },
+    {
+      "seed": 7,
+      "model": "GCN-GRU hybrid",
+      "F1": 0.6391147244805782,
+      "PR_AUC": 0.7469264210281654
+    },
+    {
+      "seed": 7,
+      "model": "GRU identity adjacency",
+      "F1": 0.6332835077229696,
+      "PR_AUC": 0.7344962387077655
+    },
+    {
+      "seed": 17,
+      "model": "Logistic (no graph-derived features)",
+      "F1": 0.49447825107054316,
+      "PR_AUC": 0.5655498607682463
+    },
+    {
+      "seed": 17,
+      "model": "GCN-GRU spatial",
+      "F1": 0.6485837734037446,
+      "PR_AUC": 0.7534741210675286
+    },
+    {
+      "seed": 17,
+      "model": "GCN-GRU hybrid",
+      "F1": 0.645657926389223,
+      "PR_AUC": 0.7532884688543533
+    },
+    {
+      "seed": 17,
+      "model": "GRU identity adjacency",
+      "F1": 0.6325511732401398,
+      "PR_AUC": 0.7339403770691232
+    },
+    {
+      "seed": 27,
+      "model": "Logistic (no graph-derived features)",
+      "F1": 0.49447825107054316,
+      "PR_AUC": 0.5655498607682463
+    },
+    {
+      "seed": 27,
+      "model": "GCN-GRU spatial",
+      "F1": 0.639160505604579,
+      "PR_AUC": 0.7424714196256983
+    },
+    {
+      "seed": 27,
+      "model": "GCN-GRU hybrid",
+      "F1": 0.6347763692896436,
+      "PR_AUC": 0.7385130033076074
+    },
+    {
+      "seed": 27,
+      "model": "GRU identity adjacency",
+      "F1": 0.6273705791901589,
+      "PR_AUC": 0.7292910339590086
+    },
+    {
+      "seed": 37,
+      "model": "Logistic (no graph-derived features)",
+      "F1": 0.49447825107054316,
+      "PR_AUC": 0.5655498607682463
+    },
+    {
+      "seed": 37,
+      "model": "GCN-GRU spatial",
+      "F1": 0.6455318171376062,
+      "PR_AUC": 0.751229059538243
+    },
+    {
+      "seed": 37,
+      "model": "GCN-GRU hybrid",
+      "F1": 0.6446318668794164,
+      "PR_AUC": 0.7500508051641159
+    },
+    {
+      "seed": 37,
+      "model": "GRU identity adjacency",
+      "F1": 0.6317300789662599,
+      "PR_AUC": 0.7311782780136108
+    },
+    {
+      "seed": 42,
+      "model": "Logistic (no graph-derived features)",
+      "F1": 0.49447825107054316,
+      "PR_AUC": 0.5655498607682463
+    },
+    {
+      "seed": 42,
+      "model": "GCN-GRU spatial",
+      "F1": 0.6475589021131892,
+      "PR_AUC": 0.754241625224214
+    },
+    {
+      "seed": 42,
+      "model": "GCN-GRU hybrid",
+      "F1": 0.6483973574749204,
+      "PR_AUC": 0.7547498108331175
+    },
+    {
+      "seed": 42,
+      "model": "GRU identity adjacency",
+      "F1": 0.6364761197723335,
+      "PR_AUC": 0.7319713000591495
+    }
+  ]
+}

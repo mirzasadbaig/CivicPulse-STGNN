@@ -1,0 +1,6 @@
+{
+  "leaves": 15,
+  "weighted": true,
+  "iters": 100,
+  "validation_ap": 0.7232492718576408
+}

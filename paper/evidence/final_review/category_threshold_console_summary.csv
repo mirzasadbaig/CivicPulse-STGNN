@@ -1,0 +1,4 @@
+period,topology,global_f1,ap,category_f1,category_precision,category_recall
+2025 validation,spatial,0.644061,0.749917,0.525846,0.397314,0.782774
+Jan-Jul 2026,spatial,0.478859,0.604002,0.483566,0.445733,0.534281
+Jan-Sep 2026,spatial,0.451304,0.566350,0.438665,0.379555,0.525014

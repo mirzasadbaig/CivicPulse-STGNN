@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use the project, please cite the repository version and acknowledge the NYC Open Data source."
+title: "CivicPulse-STGNN: A Benchmark of Geographic Graphs and Persistence for Municipal Complaint Demand"
+authors:
+  - family-names: Tanveer
+    given-names: Asad
+version: 0.8.0

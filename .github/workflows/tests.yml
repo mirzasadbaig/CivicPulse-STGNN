@@ -1,0 +1,20 @@
+name: Synthetic integration checks
+on:
+  push:
+  pull_request:
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pytest -q
+      - run: python scripts/verify_release.py
+      # No real-data fitting is performed by CI; 2026 source CSVs intentionally excluded.
+
+      - run: python scripts/verify_latest_evidence.py
+      - run: python scripts/verify_category_thresholds.py
