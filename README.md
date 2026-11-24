@@ -98,7 +98,7 @@ docs/                  Methods, caveats, release and demonstration instructions
 
 ## Research scope and limitations
 
-CivicPulse-STGNN addresses the short-horizon forecasting component of urban complaint-network research. It predicts elevated complaint demand, not independently confirmed emergencies or crisis propagation. Louvain community snapshots are descriptive and separate from the forecasting benchmark.
+CivicPulse-STGNN addresses the short-horizon forecasting component of internship Problem Statement 1, **Temporal GNN-Based Dynamic Community Detection for Urban Crisis Prediction**. The implementation intentionally narrows the original proposal to a measurable demand-exceedance target using structured daily aggregates. It predicts elevated complaint demand, not independently confirmed emergencies or crisis propagation. Louvain community snapshots are descriptive and separate from the forecasting benchmark.
 
 The study is limited to one city, 20 ZIP codes and four complaint categories. Full-node relabeling does not isolate geography from category alignment; category-preserving graph controls and evaluation in a second city are directions for future work. Saved-output metrics have been independently recomputed, but the models have not been independently retrained.
 
