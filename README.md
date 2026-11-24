@@ -4,7 +4,7 @@
 
 An empirical benchmark using real NYC 311 service-request aggregates. The study asks whether a spatial GCN–GRU adds predictive value beyond simple time-series rules and matched recurrent controls. It is a research prototype, not an emergency detector or a deployed decision system.
 
-[Research manuscript (PDF, discussion draft)](paper/CivicPulse_STGNN.pdf) · [Interactive dashboard](dashboard/) · [Reproduction guide](docs/REPRODUCIBILITY.md) · [Technical demonstration](docs/PROFESSOR_DEMO.md)
+[Research manuscript (PDF, discussion draft)](paper/CivicPulse_STGNN.pdf) · [Dashboard files](dashboard/index.html) · [Reproduction guide](docs/REPRODUCIBILITY.md) · [Technical demonstration](docs/PROFESSOR_DEMO.md)
 
 ## Key findings
 
@@ -17,7 +17,7 @@ An empirical benchmark using real NYC 311 service-request aggregates. The study 
 
 ## Benchmark results
 
-Neural entries are five-seed means (7, 17, 27, 37, 42); other models are single runs. See the [manuscript](paper/CivicPulse_STGNN.pdf) for seed SD and uncertainty. AP is average precision, not accuracy.
+Neural entries are five-seed means (7, 17, 27, 37, 42); the additional relabeling row averages 20 topology means. Non-neural baselines are single runs. See the [manuscript](paper/CivicPulse_STGNN.pdf) for seed SD and uncertainty. AP is average precision, not accuracy.
 
 | Model | Jan–Jul F1 | Jan–Jul AP | Jan–Sep F1 | Jan–Sep AP |
 |---|---:|---:|---:|---:|
@@ -32,6 +32,18 @@ Neural entries are five-seed means (7, 17, 27, 37, 42); other models are single 
 Jan–Jul (16,800 cases) is a post-hoc continuity sensitivity subset of Jan–Sep (21,680 cases); the windows overlap. Exact `Water System` and `Sewer` labels disappear in August–September 2026, and equivalence to maintenance labels is not proven. The original 2025 test and 2026 evaluations were inspected during development; extension results are exploratory, not fresh confirmation.
 
 ![Topology comparison](assets/permutation.png)
+
+### Decision thresholds and probability diagnostics
+
+Separate thresholds for each of the four complaint categories were selected on 2025 validation data. The five-seed mean results show that category-specific thresholds do not consistently improve pooled F1.
+
+| Evaluation period | Global F1 | Category-specific F1 | AP |
+|---|---:|---:|---:|
+| 2025 validation | 0.6441 | 0.5258 | 0.7499 |
+| Jan–Jul 2026 | 0.4789 | 0.4836 | 0.6040 |
+| Jan–Sep 2026 | 0.4513 | 0.4387 | 0.5664 |
+
+Brier scores and reliability-bin diagnostics assess probability quality. For the geographic GCN–GRU, mean Brier scores are 0.1925 (Jan–Jul) and 0.1833 (Jan–Sep). AP is unaffected by changing classification thresholds. See the [diagnostic evidence](paper/evidence/final_review/) and [threshold verification summary](paper/evidence/final_review/category_threshold_verified_summary.csv).
 
 ## Method
 
@@ -58,6 +70,7 @@ python -m pip install -r requirements.txt
 python -m pytest -q
 python scripts/verify_release.py
 python scripts/verify_latest_evidence.py
+python scripts/verify_category_thresholds.py
 ```
 
 The checks cover synthetic integration tests, tensor alignment and saved-output metrics, **not independent retraining**. To reproduce full training, obtain the two exact input CSVs and verify hashes using the [reproduction guide](docs/REPRODUCIBILITY.md). The full original data aggregates are intentionally excluded from Git; live downloads may differ from archived inputs. The dashboard contains selected derived aggregate counts, not individual complaint records.
@@ -69,6 +82,8 @@ src/                   Data download, graph construction, models, training
 fair_ablation.py       Matched-input neural ablation
 reviewer_experiments.py Historical controls and date-block bootstrap
 benchmark_extension.py Corrected GBM and 20-topology extension (105 runs)
+category_control.py    Category thresholds and category-preserving null implementation
+validation_calibration.py Validation baselines and probability diagnostics
 frozen_2026_eval.py    Original frozen evaluation
 jan_jul_sensitivity.py Continuity subset
 * audit scripts        Coverage and category audit (see reproduction guide)
@@ -81,27 +96,24 @@ tests/                 Synthetic and feature-layout tests
 docs/                  Methods, caveats, release and demonstration instructions
 ```
 
-## Research integrity and attribution
+## Research scope and limitations
 
-**Author:** Asad Tanveer, B.Tech Electronics and Communication Engineering, Jamia Millia Islamia.
+CivicPulse-STGNN addresses the short-horizon forecasting component of urban complaint-network research. It predicts elevated complaint demand, not independently confirmed emergencies or crisis propagation. Louvain community snapshots are descriptive and separate from the forecasting benchmark.
 
-**Research supervisor:** [Dr. Anurag Singh](https://faculty.nitdelhi.ac.in/AnuragSingh/profile), Associate Professor, Department of Computer Science and Engineering, National Institute of Technology Delhi. **Internship context:** Palanam. Supervision is credited separately from authorship; team contributions and publication authorship require confirmation.
+The study is limited to one city, 20 ZIP codes and four complaint categories. Full-node relabeling does not isolate geography from category alignment; category-preserving graph controls and evaluation in a second city are directions for future work. Saved-output metrics have been independently recomputed, but the models have not been independently retrained.
 
- The manuscript is an unsubmitted, unreviewed discussion draft. Real-data fitting was performed on the author's Mac; the saved prediction metrics have been checked separately but the models have not been independently retrained. AI assistance is disclosed in the manuscript. No institutional endorsement or publication is implied.
+For details, see the [manuscript](paper/CivicPulse_STGNN.pdf), [limitations](docs/LIMITATIONS.md) and [reproducibility guide](docs/REPRODUCIBILITY.md).
 
-Source: [NYC Open Data — 311 Service Requests from 2020 to Present](https://data.cityofnewyork.us/d/erm2-nwe9). Code licensing and mentor/institutional release approval remain subject to author confirmation. See [release checklist](docs/RELEASE_CHECKLIST.md).
+## Author and acknowledgments
 
-### Manuscript revision 9
-The [updated manuscript](paper/CivicPulse_STGNN.pdf) includes naive validation scores, Brier scores, and an explicit reproducibility appendix. See [final review and optional extensions](docs/FINAL_REVIEW.md) and [diagnostic CSVs](paper/evidence/final_review/). The spatial-only category-threshold extension is verified from archived per-seed predictions and validation labels. Category-preserving graph permutations remain unrun. The repository is public; author/host approval is separate from software verification. Revision 9 clarifies the acknowledgment and contribution list without changing results.
+**Asad Tanveer** — B.Tech, Electronics and Communication Engineering, Jamia Millia Islamia.
 
-## Category-specific decision thresholds
+**Research supervisor:** [Dr. Anurag Singh](https://faculty.nitdelhi.ac.in/AnuragSingh/profile), Associate Professor, Department of Computer Science and Engineering, National Institute of Technology Delhi.
 
-The latest spatial-only refit run selected separate F1 cutoffs for the four categories on 2025 validation. All 15 seed-period rows and 25 validation-selected cutoffs were independently recalculated and match the original files.
+**Internship:** Palanam.
 
-| Period | Global F1 | Category-cutoff pooled F1 | AP | Category precision | Category recall |
-|---|---:|---:|---:|---:|---:|
-| 2025 validation | 0.644061 | 0.525846 | 0.749917 | 0.397314 | 0.782774 |
-| Jan–Jul 2026 | 0.478859 | 0.483566 | 0.604002 | 0.445733 | 0.534281 |
-| Jan–Sep 2026 | 0.451304 | 0.438665 | 0.566350 | 0.379555 | 0.525014 |
+The reported model-training runs were executed by the author. OpenAI ChatGPT assisted with implementation, analysis and verification scripts, manuscript drafting and figure preparation; details are disclosed in the manuscript.
 
-Category thresholds do not consistently improve pooled F1, and persistence remains stronger. Individual category F1 optimization need not optimize pooled F1. AP is unchanged when only thresholds change. See [provenance and verification](paper/evidence/final_review/CATEGORY_THRESHOLD_PROVENANCE.md) and [verified means and sample SD](paper/evidence/final_review/category_threshold_verified_summary.csv). This is distinct from the proposed joint-ZIP topology null.
+The manuscript is an unsubmitted, unreviewed research discussion paper. Supervisor acknowledgment does not imply co-authorship or institutional endorsement. Publication authorship, code licensing and institutional release permissions are subject to confirmation; see the [release checklist](docs/RELEASE_CHECKLIST.md).
+
+**Data source:** [NYC Open Data — 311 Service Requests from 2020 to Present](https://data.cityofnewyork.us/d/erm2-nwe9).
